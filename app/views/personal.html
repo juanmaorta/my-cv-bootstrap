@@ -1,0 +1,23 @@
+<h2><a name="personal_info">Personal info</a></h2>
+
+<p>Juanma Orta</p>
+<p>hombre, 44</p>
+<p><strong>Vivo en</strong> Barcelona - Spain</p>
+
+<div style="margin: 1.5em 0;">
+	<p style="margin-bottom: 1em;">Te invito a...</p>
+	<p>decir hola: <a href="mailto:{{email}}">{{email}}</a></p>
+	<p>llamarme: {{mobile}}</p>
+	<p>o visitar mi <a href="{{web}}" target="_blank">página personal</a></p>
+	<p class="url">{{web}}</p>
+</div>
+
+<h3>Mis redes</h3>
+<ul class="enum">
+{{#other_urls}}
+	<li>
+		<a href="{{url}}" target="_blank">{{name}}</a>
+		<p class="url">{{url}}</p>
+	</li>
+{{/other_urls}}
+</ul>
