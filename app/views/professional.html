@@ -1,13 +1,13 @@
 	<h2>Info Profesional</h2>
 	<ul>
-		<li class="container">
-			<h3>{{company}}</strong></h3>
-			<h4>{{position}}</h4>
-			<p>{{period}}</p>
-			<p>{{description}}</p>
-			<p>{{duties}}</p>
-			<p>{{tech}}</p>
+		<li class="experience" ng-repeat="exp in professional_experience">
+			<h3>{{exp.company}}</strong></h3>
+			<h4>{{exp.position}}</h4>
+			<p>{{exp.period}}</p>
+			<p>{{exp.description}}</p>
+			<p>{{exp.duties}}</p>
+			<p>{{exp.tech}}</p>
 			
-			<a href="{{url}}" target="_blank">{{url}}</a>
+			<a href="{{exp.url}}" target="_blank">{{exp.url}}</a>
 		</li>
 	</ul>

@@ -8,21 +8,32 @@
  # Controller of the myCvBootstrapApp
 ###
 angular.module('myCvApp')
-  .controller 'CvCtrl', ($scope) ->
+  .controller 'PersonalCtrl', ($scope) ->
   	data = window.mycv
-  	# console.log data.personal_data
   	$scope.personal_data = data.personal_data
   	$scope.personal_data.age = data.personal_data.birth_date
   	$scope.contact_info = data.contact_info
+  	return
 
+  .controller 'AcadCtrl', ($scope) ->
+  	data = window.mycv
+  	# console.log data.studies
+  	$scope.studies = data.studies
+  	$scope.languages = data.languages
+  	return
 
-  	# $scope.name = 'Juanma'
-  	# $scope.surname = 'Orta'
-  	# $scope.gender = 'hombre'
-  	# $scope.age = 44
+  .controller 'ProfCtrl', ($scope) ->
+  	data = window.mycv
+  	$scope.professional_experience = data.professional_experience
 
-    # $scope.awesomeThings = [
-    #   'HTML5 Boilerplate'
-    #   'AngularJS'
-    #   'Karma'
-    # ]
+  .controller 'TechCtrl', ($scope) ->
+  	data = window.mycv
+  	$scope.tech_skills = data.tech_skills
+
+  .controller 'ProjectCtrl', ($scope) ->
+  	data = window.mycv
+  	$scope.projects = data.projects
+
+  .controller 'HobbieCtrl', ($scope) ->
+  	data = window.mycv
+  	$scope.hobbies = data.hobbies

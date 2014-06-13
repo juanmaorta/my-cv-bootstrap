@@ -136,4 +136,15 @@ ul.enum {
   } 
 }
 
+li.experience {
+  margin: .25em 1em 3em 0;
+  p {
+    font-size: .9em;
+    margin: .25em 0 1em 0;
+  }
+  img {
+    max-width: 80%;
+  }
+}
+
 .url {display: none;}
