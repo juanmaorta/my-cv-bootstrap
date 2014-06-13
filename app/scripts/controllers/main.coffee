@@ -13,6 +13,7 @@ angular.module('myCvApp')
   	$scope.personal_data = data.personal_data
   	$scope.personal_data.age = data.personal_data.birth_date
   	$scope.contact_info = data.contact_info
+
   	return
 
   .controller 'AcadCtrl', ($scope) ->
@@ -37,3 +38,21 @@ angular.module('myCvApp')
   .controller 'HobbieCtrl', ($scope) ->
   	data = window.mycv
   	$scope.hobbies = data.hobbies
+
+  .controller 'PrintCtrl', ($scope) ->
+    $scope.printing = true
+    data = window.mycv
+
+    $scope.personal_data = data.personal_data
+    $scope.personal_data.age = data.personal_data.birth_date
+    $scope.contact_info = data.contact_info
+    $scope.studies = data.studies
+    $scope.languages = data.languages
+    $scope.professional_experience = data.professional_experience
+    $scope.tech_skills = data.tech_skills
+    $scope.projects = data.projects
+    $scope.hobbies = data.hobbies
+
+    window.print()
+
+    return

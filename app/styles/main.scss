@@ -124,6 +124,13 @@ nav {
   min-height: 500px;
 }
 
+#left {
+  img {
+    width: 100%;
+    max-width: 204px;
+  }
+}
+
 ul.enum {
   // padding-left: 1.1em;
   li { 
@@ -148,3 +155,29 @@ li.experience {
 }
 
 .url {display: none;}
+
+@media screen and (max-width: 1200px) {
+  #left {
+    h2 {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+    nav {
+      font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    nav {
+      display: none;
+    }
+}
+
+.print {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+a.print {
+	display: none;
+}
+
+a {text-decoration: none;}
+
+h2 {
+	margin-top: 3em;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+
+nav {
+	font-size: .8em;
+	width: 15% !important;
+	a.current {
+		color: #006600;
+	}
+	display: none;
+}
+
+#main {
+	width: 70% !important;
+}
+
+#left {
+	width: 30% !important;
+}

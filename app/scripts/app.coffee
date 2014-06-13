@@ -44,6 +44,10 @@ myCvApp.config(['$routeProvider', ($routeProvider) ->
 			templateUrl: 'views/hobbies.html'
 			controller: 'HobbieCtrl'
 		).
+		when('/print',
+			templateUrl: 'views/print_version.html'
+			controller: 'PrintCtrl'
+		).
 		otherwise(
 			redirecTo: '/'
 		)
