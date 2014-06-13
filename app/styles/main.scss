@@ -116,10 +116,24 @@ nav {
 }
 
 #wrapper {
-  width: 90%;
-  max-width: 960px;
+  // width: 90%;
+  // max-width: 960px;
   margin: 0 auto;
   background-color: $wrapper_bg;
   padding: 3%;
   min-height: 500px;
 }
+
+ul.enum {
+  // padding-left: 1.1em;
+  li { 
+    margin-bottom: .25em;
+    i {
+      color: #000;
+      font-size: .8em;
+      margin-right: .8em;
+    }
+  } 
+}
+
+.url {display: none;}

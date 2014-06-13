@@ -1,23 +1,21 @@
-<h2><a name="personal_info">Personal info</a></h2>
+<h2>Info Personal</h2>
 
-<p>Juanma Orta</p>
-<p>hombre, 44</p>
-<p><strong>Vivo en</strong> Barcelona - Spain</p>
+<p>{{ personal_data.name }} {{ personal_data.surname }}</p>
+<p>{{ personal_data.gender }}, {{ personal_data.age }}</p>
+<p><strong>Vivo en</strong> {{ personal_data.city_of_residence }} - {{ personal_data.country_of_residence }}</p>
 
 <div style="margin: 1.5em 0;">
 	<p style="margin-bottom: 1em;">Te invito a...</p>
-	<p>decir hola: <a href="mailto:{{email}}">{{email}}</a></p>
-	<p>llamarme: {{mobile}}</p>
-	<p>o visitar mi <a href="{{web}}" target="_blank">página personal</a></p>
-	<p class="url">{{web}}</p>
+	<p>decir hola: <a href="mailto:{{contact_info.email}}">{{contact_info.email}}</a></p>
+	<p>llamarme: {{contact_info.mobile}}</p>
+	<p>o visitar mi <a href="{{contact_info.web}}" target="_blank">página personal</a></p>
+	<p class="url">{{contact_info.web}}</p>
 </div>
 
 <h3>Mis redes</h3>
 <ul class="enum">
-{{#other_urls}}
-	<li>
-		<a href="{{url}}" target="_blank">{{name}}</a>
-		<p class="url">{{url}}</p>
+	<li ng-repeat="url in contact_info.other_urls">
+		<i class="glyphicon glyphicon-plus"></i><a href="{{url.url}}" target="_blank">{{url.name}}</a>
+		<p class="url">{{url.url}}</p>
 	</li>
-{{/other_urls}}
 </ul>
