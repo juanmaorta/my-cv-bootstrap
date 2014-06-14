@@ -11,13 +11,11 @@ h2 {
 	}
 }
 
+.hide-mobile {
+	display: none !important;
+}
 
 nav {
-	font-size: .8em;
-	width: 15% !important;
-	a.current {
-		color: #006600;
-	}
 	display: none;
 }
 
