@@ -109,9 +109,16 @@ nav {
   }
 }
 
+.show-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 720px) {
   .hide-mobile {
     display: none;
+  }
+  .show-mobile {
+    display: block;
   }
   #main {
     width: 70% !important;
@@ -168,6 +175,15 @@ li.experience {
     h2 {
       display: none;
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #left {
+    display: none;
+  }
+  #main {
+    width: 100% !important;
   }
 }
 

@@ -33,20 +33,40 @@
       </div>
       -->
 
-      <nav class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-group-vertical hide-mobile">
-          <a ng-href="#" title="personal" class="btn btn-default">.<span>display</span>PersonalInfo()</a></li>
-          <a ng-href="#/academic_info" title="academic" class="btn btn-default">.<span>display</span>AcademicInfo()</a>
-          <a ng-href="#/professional_info" title="professional" class="btn btn-default">.<span>display</span>ProfesionalInfo()</a>
-          <a ng-href="#/technical_skill_info" title="tech" class="btn btn-default">.<span>display</span>TechnicalSkills()</a>
-          <a ng-href="#/project_info" title="projects" class="btn btn-default">.<span>display</span>Projects()</a>
-          <a ng-href="#/hobbies_info" title="hobbies" class="btn btn-default">.<span>display</span>Hobbies()</a>
-      </nav>
-
-      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="main">
-        <div ng-view></div>
+      <div class="row show-mobile" style="margin-bottom: .8em;" ng-controller="MenuCtrl" >
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <button class="btn btn-default" ng-click="showMenu()" style="margin-bottom: 1em;"><i class="glyphicon glyphicon-align-justify"></i></button>
+          <nav class="btn-group" ng-show="showmenu">
+            <a ng-href="#" title="personal" class="btn btn-default">.PersonalInfo()</a></li>
+            <a ng-href="#/academic_info" title="academic" class="btn btn-default">.AcademicInfo()</a>
+            <a ng-href="#/professional_info" title="professional" class="btn btn-default">.ProfesionalInfo()</a>
+            <a ng-href="#/technical_skill_info" title="tech" class="btn btn-default">.TechnicalSkills()</a>
+            <a ng-href="#/project_info" title="projects" class="btn btn-default">.Projects()</a>
+            <a ng-href="#/hobbies_info" title="hobbies" class="btn btn-default">.Hobbies()</a>
+          </nav>
+          <!--
+          <button class="btn pull-left"><i class="glyphicon glyphicon-align-justify"></i></button>
+          -->
+        </div>
       </div>
-      <div ng-include="'views/photo.html'" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="left">
-        
+
+
+      <div class="row">
+        <nav class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-group-vertical hide-mobile">
+            <a ng-href="#" title="personal" class="btn btn-default">.<span>display</span>PersonalInfo()</a></li>
+            <a ng-href="#/academic_info" title="academic" class="btn btn-default">.<span>display</span>AcademicInfo()</a>
+            <a ng-href="#/professional_info" title="professional" class="btn btn-default">.<span>display</span>ProfesionalInfo()</a>
+            <a ng-href="#/technical_skill_info" title="tech" class="btn btn-default">.<span>display</span>TechnicalSkills()</a>
+            <a ng-href="#/project_info" title="projects" class="btn btn-default">.<span>display</span>Projects()</a>
+            <a ng-href="#/hobbies_info" title="hobbies" class="btn btn-default">.<span>display</span>Hobbies()</a>
+        </nav>
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="main">
+          <div ng-view></div>
+        </div>
+        <div ng-include="'views/photo.html'" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="left">
+          
+        </div>
       </div>
 
       

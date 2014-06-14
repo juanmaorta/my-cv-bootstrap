@@ -8,6 +8,15 @@
  # Controller of the myCvBootstrapApp
 ###
 angular.module('myCvApp')
+  .controller 'MenuCtrl', ($scope) ->
+    $scope.showMenu = () ->
+      if $scope.showmenu
+        $scope.showmenu = false
+      else
+        $scope.showmenu = true
+      # console.log "click!"
+    return
+
   .controller 'PersonalCtrl', ($scope) ->
   	data = window.mycv
   	$scope.personal_data = data.personal_data
