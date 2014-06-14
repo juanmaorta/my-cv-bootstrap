@@ -1,8 +1,8 @@
-<h2>Mis pasiones</h2>
+<h2>My Passions</h2>
 <ul>
 <li class="experience" ng-repeat="hobbie in hobbies">
 	<strong>{{ hobbie.name }}</strong>
 	<p>{{ hobbie.description}}</p>
-	<img src="{{ hobbie.image }}" />
+	<img src="{{ hobbie.image }}" ng-show="hobbie.image"/>
 </li>
 </ul>
