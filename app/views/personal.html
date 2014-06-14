@@ -1,18 +1,18 @@
-<h2>Info Personal</h2>
+<h2>Personal Info</h2>
 
 <p>{{ personal_data.name }} {{ personal_data.surname }}</p>
 <p>{{ personal_data.gender }}, {{ personal_data.age }}</p>
-<p><strong>Vivo en</strong> {{ personal_data.city_of_residence }} - {{ personal_data.country_of_residence }}</p>
+<p><strong>I live in</strong> {{ personal_data.city_of_residence }} - {{ personal_data.country_of_residence }}</p>
 
 <div style="margin: 1.5em 0;">
-	<p style="margin-bottom: 1em;">Te invito a...</p>
-	<p>decir hola: <a href="mailto:{{contact_info.email}}">{{contact_info.email}}</a></p>
-	<p>llamarme: {{contact_info.mobile}}</p>
-	<p>o visitar mi <a href="{{contact_info.web}}" target="_blank">página personal</a></p>
+	<p style="margin-bottom: 1em;">I invite you to...</p>
+	<p>say hello: <a href="mailto:{{contact_info.email}}">{{contact_info.email}}</a></p>
+	<p>call me: {{contact_info.mobile}}</p>
+	<p>or visit my <a href="{{contact_info.web}}" target="_blank">personal website</a></p>
 	<p class="url">{{contact_info.web}}</p>
 </div>
 
-<h3>Mis redes</h3>
+<h3>Social URLs</h3>
 <ul class="enum">
 	<li ng-repeat="url in contact_info.other_urls">
 		<i class="glyphicon glyphicon-plus"></i><a href="{{url.url}}" target="_blank">{{url.name}}</a>
