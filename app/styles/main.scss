@@ -193,3 +193,34 @@ li.experience {
   }
 }
 
+
+@media print {
+  a.print {
+    display: none;
+  }
+
+  a {text-decoration: none;}
+
+  h2 {
+    margin-top: 3em;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #main {
+    width: 70% !important;
+  }
+
+  #left {
+    width: 30% !important;
+  }
+}
