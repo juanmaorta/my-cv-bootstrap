@@ -1,6 +1,5 @@
-$icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$icon-font-path: "../bower_components/bootstrap-sass/fonts/";
 // bower:scss
-@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
 $bg_color: #dedede;
@@ -53,6 +52,7 @@ strong {
 
 h1, h2, h3, h4 {
   font-weight: normal;
+  font-family: "Andale Mono", "Courier new", Courier; 
   margin: 0 0 .5em 0;
   color: $title_color;
   a {
