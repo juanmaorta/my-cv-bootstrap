@@ -1,0 +1,31 @@
+# Juanma Orta - Resume. AngularJS boostrap format
+Welcome to the source code of my interactive resume.
+This resume is also a proof of concept of some front-end development skills: **HTML5**, **Javascript**, **CSS**, (and CoffeeScript/SASS as well), **AngularJS** and **responsive layout**.
+
+## Installation:
+To make this resume fully interactive, you need to fulfill an easy installation process.
+You need to have [http://nodejs.org](Node.js), [http://bower.io](Bower) and [http://gruntjs.com](Grunt) installed in your computer. 
+
+After you have cloned the repo, you must update the node packages needed:
+```
+npm install
+```
+
+Then download the JS dependencies by typing:
+```
+bower install
+```
+
+Then, to build the app type:
+```
+grunt build
+```
+
+You'll find the interactive app at dist/index.html
+
+## Local server mode
+You can also run the CV as a local server, using Node http server features. Just run:
+```
+grunt serve
+```
+This instruction will open your favourite browser and point it to the cv website
