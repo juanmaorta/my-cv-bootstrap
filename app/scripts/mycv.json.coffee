@@ -10,7 +10,7 @@ mycv =
 	personal_data:
 		name: 	"Juanma"
 		surname: "Orta"
-		gender: "male"
+		gender: "varón"
 		birth_date: "1969-10-10"
 		city_of_birth: "Terrassa, Barcelona"
 		country_of_birth: "Spain"
@@ -38,12 +38,12 @@ mycv =
 		]
 
 	studies: [
-		title: "Degree in Biology"
+		title: "Licenciado en Biología"
 		center: "Universitat Autonoma de Barcelona"
 		period:	"1988-1993"
 		city:	"Barcelona (Spain)"
 	,
-		title: "Software Architecture"
+		title: "Arquitectura de Software"
 		center: "Universitat Oberta de Catalunya"
 		period:	"2003-2005"
 		city:	"Non presential"
@@ -52,51 +52,52 @@ mycv =
 
 
 	languages: [
-		lang_name: "English"
-		level: "very good"
+		lang_name: "Inglés"
+		level: "muy bueno"
 	,
-		lang_name: "French"
-		level: "intermediate"
+		lang_name: "Francés"
+		level: "intermedio"
 	,
-		lang_name: "Spanish"
-		level:	"native"
+		lang_name: "Castellano"
+		level:	"nativo"
 	,
-		lang_name: "Catalan"
-		level: "native"
+		lang_name: "Catalán"
+		level: "nativo"
 	]
 
 	professional_experience: [
-		period : "2000 - present"
+		period : "2000 - actualidad"
 		company: "Freelance"
-		description: "During the last 14 years, I've been working as a freelance front and back end developer for many independent 
-		customers. You can see some of the most relevant in the Projects() section"
+		description: "Durante los últimos 14 años he estado trabajando como desarrollador freelance de front y backend para muchos clientes independientes.
+		Puedes ver algunos de los proyectos más relevantes en la sección Projects()."
 	,
-		period: "2006 - present"
+		period: "2006 - actualidad"
 		company: "Portafolionline.com"
-		position: "Founder and main developer"
-		description: "Portafolionline it's a specialized CMS for photography and art websites. It allows artists to 
-		create their own websites and showcase their work without effort."
-		duties: "This is one of my personal projects. In fact, it's the one that gets most of my heart and mind nowadays. Here I'm responsible of the development process, but also of hiring the right 
-		people for the right job. This can be a graphic designer, copywriter, front/back end developer. Most of them are remote workers, some working from as far as  
-		India."
+		position: "Fundador y principal desarrollador"
+		description: "Portafolionline es un gestor de contenidos especializado en webs de fotógrafos y artistas. Permite a los artistas crear
+		su propio website y mostrar su trabajo sin esfuerzo."
+		duties: "Este es uno de mis proyectos personales. De hecho, es uno de los que ocupa la mayoría de mi corazón y mente actualmente. 
+		Aquí soy responssable del proceso de desarrollo, pero también de contratar a la persona adecuada para el trabajo adecuado. Puede ser un diseñador gráfico,
+		un redactor o un programador. La mayoría de ellos son también freelance, y algunos trabajan en lugares tan remotos como la India."
 		url: "http://www.portafolionline.es"
 	,
-		period: "2001 - present"
+		period: "2001 - actualidad"
 		company: "Ameba Interactiva SL"
-		position: "Co-founder and CTO"
-		description: "Ameba Interactiva it's the company behind Fotonatura.org, the main Spanish online community of nature photography."
-		duties: "Here I'm also part of the company's board of directors, so I take part in commercial and
-		strategical decisions. My other responsilibies include analysis, design and development of the application (back and front-end), system and database administrator and coordination with the freelance developers."
-		tech: "The website is in its 5th version, now with an enriched Ajax UI in most of the pages and extensive jQuery use. I'm rewritting the private backoffice as a 'single page app' using Backbone and jQuery."
+		position: "Cofundador y director técnico"
+		description: "Ameba Interactiva es la empresa que está detrás de Fotonatura.org, la principal comunidad online de fotografía de naturaleza en español."
+		duties: "Aquí soy también uno de los socios, de modo que también tomo parte en decisiones comerciales y estratégicas. Mis otras responsabilidades incluyen 
+		el análisis, diseño y desarrollo de la aplicación (back y front), administración de sistema y bases de datos y coordinación con los desarrolladores freelance."
+		tech: "La aplicación web se encuentra ahora en su 5a versión, enriquecida con una UI en Ajax en la mayoría de páginas y un uso intensivo de jQuery. Por otro lado,
+		estoy reescribiendo el backoffice privado como una 'single page app' usando Backbone-"
 		url: "http://www.fotonatura.org"
 	,
 		period: "2006 - 2013"
 		company: "Use Your Time SL"
-		position: "CTO"
-		description: "Use Your Time is an internet company specialized in online job boards. It's  main project is Yobalia.com, a job board
-		for people between 23 and 35 years."
-		duties: "My resposabilities here were mainly technical: analysis, design and development of front and backend apps, sysadmin of the server farm (in 
-			collaboration with an external firm) and coordination with freelance designers and developers."
+		position: "Director técnico"
+		description: "Use Your Time es una compañia de Internet especializada en bolsas de empleo online. Su  proyecto principal es Yobalia.com, una bolsa de empleo
+		para personas de entre 23 y 35 años."
+		duties: "Mis resposabilidades aquí fueron principalmente técnicas: análisis, diseño y desarrollo del front y backend, administración de los servidores (al final en coordinación con una empresa externa)
+		 y coordinación con diseñadores y programadores freelance."
 		url: "http://www.yobalia.com"
 
 	]
@@ -121,13 +122,14 @@ mycv =
 	personal_skills: []
 
 	hobbies: [
-		name: "Photography"
-		description: "I've been pressing the shutter for 28 years now, so if I had to choose the one and only hobby, that would be photography. It's my way to express myself and specially, what I feel when I'm in a natural enviroment.
-		Although I love all photography disciplines, nature photography is my fav, no doubt about it. And it's also a good excuse to travel and visit new places!"
+		name: "Fotografía"
+		description: "He estado pulsando el disparador desde hace 28 años, de modo que si tuviese que elegir un único hobby, ese sería la fotografía. Es mi forma
+		de expresión y, especialmente, de expresar lo que siento cuando estoy en un entorno natural. Aunque me apasionan todas las disciplinas fotográficas, la fotografía 
+		de naturaleza es mi favorita, sin duda alguna. Además, es una buena excusa para viajar y visitar nuevos lugares!"
 		image: "./images/taking_photos.jpg"
 	,
-		name: "Scuba diving"
-		description: "Think about visiting another planet. Think about flying. That's scuba diving. But it can be even better... just add a camera ;-)"
+		name: "Submarinismo"
+		description: "Piensa cómo sería visitar otro planeta. Piensa en volar. Eso es el submarinismo. Pero puede ser incluso mejor... simplemente añade una cámara ;-)"
 		image: "./images/scuba2.jpg"
 	,
 	# 	name: "Jogging"
@@ -138,9 +140,10 @@ mycv =
 	projects: [
 		name: "Orenetes.cat"
 		url: "http://www.orenetes.cat"
-		description: "One of those one in a lifetime projects. Orenetes ('housemartins' in Catalan) its a project designed to bring ecology to people. It's subject is to track housemartins nests around Catalonia, but in fact
-		it makes people more conscious about their enviroment. It has an intensive Google Map's API use and also deep datamining to show maps, charts and reports. I love it because, years after obtaining my degree in biology, 
-		gave me the opportunity to apply some of my ecology knowledge in my new career."
+		description: "Uno de esos proyectos que te ofrecen sólo una vez en la vida. Orenetes ('golondrinas' en catalán) es un proyecto diseñado para llevar la ecología a la gente. 
+		Su objeto principal es registrar los nidos de golondrinas en Catalunya, pero en realidad lo que hace es que la gente sea más consciente acerca de su ambiente. Hace un uso intensivo de la API de 
+		Google Maps y también un profundo procesamiento de datos para mostrar,  mapas, gráficas e informes. Es un proyecto que me encanta porque, años después de licenciarme en biología, me dió la oportunidad 
+		de aplicar parte de mis conocimientos ecológicos en mi nueva carrera"
 	,
 	# 	name: "Naturapics"
 	# 	url: "http://galerie.naturapics.com"
@@ -155,12 +158,12 @@ mycv =
 	# ,
 		name: "Marques especials"
 		url: "http://marques.ornitologia.org"
-		description: "Another social ornithology job, in this case to track bird migration. Amateur ornithologist use this web-app to record their sightings and the gathered data is put together to allow
-		for a better understanding of the bird migration fenomenon. The site has a lot of Google Maps use, as well as mootools. 'Marques especials' means 'special tags' in Catalan."
+		description: "Otro trabajo de 'ornitología social'. En este caso, registra las migraciones de aves. Los ornitólogos amateurs usan esta aplicación para registrar sus avistamientos
+		 y los datos que registran son archivados juntos. Esto permite un mayor conocimiento del fenómeno migratorio. La aplicación hace un uso intensivo de Google Maps, así como de la librería mootools."
 	,
 		name: "jquery.simple-plugins"
 		url: "https://github.com/juanmaorta/JQuery-plugins"
-		description: "A compendium of some jQuery plugins that I developped to use in my projects. Instead of loading heavy plugin libraries of which only a little part is used, 
-		I use this light script with the most used in my UIs."
+		description: "Un compendio de algunos plugins para jQuery que he desarrollado para utilizarlos en mis proyectos. En lugar de cargar pesadas librerías de las que sólo se utiliza una parte, utilizo este ligero script
+		en muchas de mis interfaces de usuario."
 	]
 
