@@ -9,6 +9,7 @@
     <!-- build:css(./) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap-sass/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -24,7 +25,7 @@
     <div class="container" id="wrapper">
       <div class="row show-mobile" style="margin-bottom: .8em;" ng-controller="MenuCtrl" >
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <button class="btn btn-default" ng-click="showMenu()" style="margin-bottom: 1em;"><i class="glyphicon glyphicon-align-justify"></i></button>
+          <button class="btn btn-default" ng-click="showMenu()" style="margin-bottom: 1em;"><i class="fa fa-bars"></i></button>
           <nav class="btn-group" ng-show="showmenu">
             <a ng-href="#" title="personal" class="btn btn-default">.PersonalInfo()</a></li>
             <a ng-href="#/academic_info" title="academic" class="btn btn-default">.AcademicInfo()</a>
@@ -59,9 +60,9 @@
     </div>
 
     <footer class="container">
-      <a ng-href="#/print" class="print"><i class="glyphicon glyphicon-print"></i>&nbsp;Printer friendly version</a>
+      <a ng-href="#/print" class="print"><i class="fa fa-print"></i>&nbsp;Printer friendly version</a>
       <p>This resume is also a proof of concept of some front-end development skills: <strong>HTML5, Javascript, CSS</strong>, (and <strong>CoffeeScript/SASS</strong> as well), <strong>AngularJS</strong> and <strong>responsive layout</strong>.</p>
-      <p>The <strong>full source code</strong> of the interactive version is available at <a href="https://github.com/juanmaorta/my-cv-bootstrap" target="_blank">GitHub</a><span class="url"> (https://github.com/juanmaorta/My-CV)</span></p>
+      <p>The <strong>full source code</strong> of the interactive version is available at <a href="https://github.com/juanmaorta/my-cv-bootstrap" target="_blank">GitHub</a>&nbsp;<i class="fa fa-github-alt"></i><span class="url"> (https://github.com/juanmaorta/my-cv-bootstrap)</span></p>
     </footer>
 
     <!--[if lt IE 9]>

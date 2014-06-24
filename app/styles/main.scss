@@ -62,6 +62,11 @@ h1, h2, h3, h4 {
 }
 
 
+h3, h4 {
+  margin-top: 2em;
+}
+
+
 ul {
   list-style: none;
   margin: 0;
@@ -166,6 +171,15 @@ li.experience {
   img {
     max-width: 80%;
   }
+  a {
+    text-decoration: none;
+    strong {
+      text-decoration: underline;
+      &:hover {
+        color: $strong_color;
+      }
+    }
+  }
 }
 
 .url {display: none;}
@@ -193,6 +207,9 @@ li.experience {
   }
 }
 
+i.fa {
+  color: $strong_color;
+}
 
 @media print {
   a.print {
