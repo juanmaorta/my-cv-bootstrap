@@ -1,21 +1,21 @@
-<h2>Personal Info</h2>
+<h2>Info Personal</h2>
 
 <p>{{ personal_data.name }} {{ personal_data.surname }}</p>
 <p>{{ personal_data.gender }}, {{ personal_data.age }}</p>
-<p><strong>I live in</strong> {{ personal_data.city_of_residence }} - {{ personal_data.country_of_residence }}</p>
+<p><strong>Vivo en</strong> {{ personal_data.city_of_residence }} - {{ personal_data.country_of_residence }}</p>
 
 <div style="margin: 1.5em 0;">
-	<p style="margin: 2em 0;">I invite you to...</p>
+	<p style="margin: 2em 0;">Te invito a...</p>
 	<ul>
-		<li><p><i class="fa fa-envelope-o"></i>&nbsp;say hello: <a href="mailto:{{contact_info.email}}">{{contact_info.email}}</a></p></li>
-		<li><p><i class="fa fa-phone"></i>&nbsp;call me: <strong>{{contact_info.mobile}}</strong></p></li>
-		<li ng-show="contact_info.skype"><p><i class="fa fa-skype"></i>&nbsp;Skype with me: {{contact_info.skype}}</p></li>
-		<li ng-show="contact_info.web"><p>or visit my <a href="{{contact_info.web}}" target="_blank">personal website</a></p></li>
+		<li><p><i class="fa fa-envelope-o"></i>&nbsp;saludarme: <a href="mailto:{{contact_info.email}}">{{contact_info.email}}</a></p></li>
+		<li><p><i class="fa fa-phone"></i>&nbsp;hacerme una llamada: <strong>{{contact_info.mobile}}</strong></p></li>
+		<li ng-show="contact_info.skype"><p><i class="fa fa-skype"></i>&nbsp;un Skype: {{contact_info.skype}}</p></li>
+		<li ng-show="contact_info.web"><p>o visitar <a href="{{contact_info.web}}" target="_blank">página personal</a></p></li>
 		<li><p class="url">{{contact_info.web}}</p></li>
 	</ul>
 </div>
 
-<h3>Social URLs</h3>
+<h3>Redes Sociales</h3>
 <ul class="enum">
 	<li ng-repeat="url in contact_info.other_urls">
 		<i class="fa fa-chevron-right"></i><a href="{{url.url}}" target="_blank">{{url.name}}</a>
