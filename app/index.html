@@ -16,23 +16,23 @@
     <link rel="stylesheet" href="styles/main.css" />
     <!-- endbuild -->
   </head>
-  <body ng-app="myCvApp">
+  <body data-ng-app="myCvApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
     <div class="container" id="wrapper">
-      <div class="row show-mobile" style="margin-bottom: .8em;" ng-controller="MenuCtrl" >
+      <div class="row show-mobile" style="margin-bottom: .8em;" data-ng-controller="MenuCtrl" >
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <button class="btn btn-default" ng-click="showMenu()" style="margin-bottom: 1em;"><i class="fa fa-bars"></i></button>
-          <nav class="btn-group" ng-show="showmenu">
-            <a ng-href="#" title="personal" class="btn btn-default">.PersonalInfo()</a></li>
-            <a ng-href="#/academic_info" title="academic" class="btn btn-default">.AcademicInfo()</a>
-            <a ng-href="#/professional_info" title="professional" class="btn btn-default">.ProfesionalInfo()</a>
-            <a ng-href="#/technical_skill_info" title="tech" class="btn btn-default">.TechnicalSkills()</a>
-            <a ng-href="#/project_info" title="projects" class="btn btn-default">.Projects()</a>
-            <a ng-href="#/hobbies_info" title="hobbies" class="btn btn-default">.Hobbies()</a>
+          <button class="btn btn-default" data-ng-click="showMenu()" style="margin-bottom: 1em;"><i class="fa fa-bars"></i></button>
+          <nav class="btn-group" data-ng-show="showmenu">
+            <a data-ng-href="#" title="personal" class="btn btn-default">.PersonalInfo()</a>
+            <a data-ng-href="#/academic_info" title="academic" class="btn btn-default">.AcademicInfo()</a>
+            <a data-ng-href="#/professional_info" title="professional" class="btn btn-default">.ProfesionalInfo()</a>
+            <a data-ng-href="#/technical_skill_info" title="tech" class="btn btn-default">.TechnicalSkills()</a>
+            <a data-ng-href="#/project_info" title="projects" class="btn btn-default">.Projects()</a>
+            <a data-ng-href="#/hobbies_info" title="hobbies" class="btn btn-default">.Hobbies()</a>
           </nav>
         </div>
       </div>
@@ -40,18 +40,18 @@
 
       <div class="row">
         <nav class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-group-vertical hide-mobile">
-            <a ng-href="#" title="personal" class="btn btn-default">.<span>display</span>PersonalInfo()</a></li>
-            <a ng-href="#/academic_info" title="academic" class="btn btn-default">.<span>display</span>AcademicInfo()</a>
-            <a ng-href="#/professional_info" title="professional" class="btn btn-default">.<span>display</span>ProfesionalInfo()</a>
-            <a ng-href="#/technical_skill_info" title="tech" class="btn btn-default">.<span>display</span>TechnicalSkills()</a>
-            <a ng-href="#/project_info" title="projects" class="btn btn-default">.<span>display</span>Projects()</a>
-            <a ng-href="#/hobbies_info" title="hobbies" class="btn btn-default">.<span>display</span>Hobbies()</a>
+            <a data-ng-href="#" title="personal" class="btn btn-default">.<span>display</span>PersonalInfo()</a>
+            <a data-ng-href="#/academic_info" title="academic" class="btn btn-default">.<span>display</span>AcademicInfo()</a>
+            <a data-ng-href="#/professional_info" title="professional" class="btn btn-default">.<span>display</span>ProfesionalInfo()</a>
+            <a data-ng-href="#/technical_skill_info" title="tech" class="btn btn-default">.<span>display</span>TechnicalSkills()</a>
+            <a data-ng-href="#/project_info" title="projects" class="btn btn-default">.<span>display</span>Projects()</a>
+            <a data-ng-href="#/hobbies_info" title="hobbies" class="btn btn-default">.<span>display</span>Hobbies()</a>
         </nav>
 
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="main">
-          <div ng-view></div>
+          <div data-ng-view></div>
         </div>
-        <div ng-include="'views/photo.html'" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="left">
+        <div data-ng-include="'views/photo.html'" class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="left">
           
         </div>
       </div>
@@ -60,9 +60,9 @@
     </div>
 
     <footer class="container">
-      <a ng-href="#/print" class="print"><i class="fa fa-print"></i>&nbsp;Printer friendly version</a>
-      <p>This resume is also a proof of concept of some front-end development skills: <strong>HTML5, Javascript, CSS</strong>, (and <strong>CoffeeScript/SASS</strong> as well), <strong>AngularJS</strong> and <strong>responsive layout</strong>.</p>
-      <p>The <strong>full source code</strong> of the interactive version is available at <a href="http://juanmaorta.github.io/my-cv-bootstrap" target="_blank">GitHub</a>&nbsp;<i class="fa fa-github-alt"></i><span class="url"> (http://juanmaorta.github.io/my-cv-bootstrap)</span></p>
+      <a data-ng-href="#/print" class="print"><i class="fa fa-print"></i>&nbsp;Versión para impresora</a>
+      <p>Este curriculum es también un test de algunas habilidades de desarrollo front-end: <strong>HTML5, Javascript, CSS</strong>,<br />(y <strong>CoffeeScript/SASS</strong> también), <strong>AngularJS</strong> y <strong>maquetación responsive</strong>.</p>
+      <p>El <strong>código fuente completo</strong> de la versión interactiva está disponible en <a href="http://juanmaorta.github.io/my-cv-bootstrap" target="_blank">GitHub</a>&nbsp;<i class="fa fa-github-alt"></i><span class="url"> (http://juanmaorta.github.io/my-cv-bootstrap)</span></p>
     </footer>
 
     <!--[if lt IE 9]>
