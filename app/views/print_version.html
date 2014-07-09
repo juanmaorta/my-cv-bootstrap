@@ -1,18 +1,21 @@
-<h2>Personal Info</h2>
+<h2>Info Personal</h2>
 
 <p>{{ personal_data.name }} {{ personal_data.surname }}</p>
 <p>{{ personal_data.gender }}, {{ personal_data.age }}</p>
-<p><strong>I live in</strong> {{ personal_data.city_of_residence }} - {{ personal_data.country_of_residence }}</p>
+<p><strong>Vivo en</strong> {{ personal_data.city_of_residence }} - {{ personal_data.country_of_residence }}</p>
 
 <div style="margin: 1.5em 0;">
-	<p style="margin-bottom: 1em;">I invite you to...</p>
-	<p>say hello: <a href="mailto:{{contact_info.email}}">{{contact_info.email}}</a></p>
-	<p>call me: {{contact_info.mobile}}</p>
-	<p>or visit my <a href="{{contact_info.web}}" target="_blank">personal website</a></p>
-	<p class="url">{{contact_info.web}}</p>
+	<p style="margin: 2em 0;">Te invito a...</p>
+	<ul>
+		<li><p><i class="fa fa-envelope-o"></i>&nbsp;saludarme: <a href="mailto:{{contact_info.email}}">{{contact_info.email}}</a></p></li>
+		<li><p><i class="fa fa-phone"></i>&nbsp;hacerme una llamada: <strong>{{contact_info.mobile}}</strong></p></li>
+		<li ng-show="contact_info.skype"><p><i class="fa fa-skype"></i>&nbsp;un Skype: {{contact_info.skype}}</p></li>
+		<li ng-show="contact_info.web"><p>o visitar <a href="{{contact_info.web}}" target="_blank">página personal</a></p></li>
+		<li><p class="url">{{contact_info.web}}</p></li>
+	</ul>
 </div>
 
-<h3>Social URLs</h3>
+<h3>Redes Sociales</h3>
 <ul class="enum">
 	<li ng-repeat="url in contact_info.other_urls">
 		<i class="fa fa-chevron-right"></i><a href="{{url.url}}" target="_blank">{{url.name}}</a>
@@ -22,19 +25,19 @@
 
 <hr />
 
-<h2>Academic Info</h2>
+<h2>Estudios</h2>
 <ul>
 	<li ng-repeat="study in studies"><strong>{{study.title}}</strong><p><em>{{study.period}}</em></p><p>{{study.center}}</p><p>{{study.city}}</p></li>
 </ul>
 
-<h3>Languages</h3>
+<h3>Idiomas</h3>
 <ul class="enum">
 	<li ng-repeat="lang in languages">{{lang.lang_name}} - {{lang.level}}</li>
 </ul>
 
 <hr />
 
-<h2>Profesional Info</h2>
+<h2>Info Profesional</h2>
 <ul>
 	<li class="experience" ng-repeat="exp in professional_experience">
 		<h3>{{exp.company}}</strong></h3>
@@ -44,23 +47,23 @@
 		<p>{{exp.duties}}</p>
 		<p>{{exp.tech}}</p>
 		
-		<a href="{{exp.url}}" target="_blank">{{exp.url}}</a>
+		<a href="{{exp.url}}" target="_blank" ng-show="exp.url">{{exp.url}}</a>
 	</li>
 </ul>
 
 <hr />
 
-<h2>Technical skills</h2>
+<h2>Habilidades técnicas</h2>
 <ul class="enum">
-	<li ng-repeat="skill in tech_skills">{{ skill }}</li>
+	<li ng-repeat="skill in tech_skills"><i class="fa fa-check"></i>{{ skill }}</li>
 </ul>
 
 <hr />
 
-<h2>Some freelance projects</h2>
+<h2>Algunos proyectos como freelance</h2>
 <ul>
 <li class="experience" ng-repeat="project in projects">
-	<a href="{{ project.url }}" target="_blank"><strong>{{ project.name }}</strong></a>
+	<a href="{{ project.url }}" target="_blank"><strong>{{ project.name }}</strong>&nbsp;<i class="fa fa-external-link"></i></a>
 	<p class="url">{{ project.url }}</p>
 	<p>{{ project.duties }}</p>
 	<p>{{ project.description }}</p>
@@ -69,10 +72,10 @@
 
 <hr />
 
-<h2>My Passions</h2>
+<h2>Mis hobbies</h2>
 <ul>
 <li class="experience" ng-repeat="hobbie in hobbies">
-	<strong>{{ hobbie.name }}</strong>
+	<h4>{{ hobbie.name }}</h4>
 	<p>{{ hobbie.description}}</p>
 	<img src="{{ hobbie.image }}" ng-show="hobbie.image"/>
 </li>

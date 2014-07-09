@@ -72,7 +72,7 @@ mycv =
 		Puedes ver algunos de los proyectos más relevantes en la sección Projects()."
 	,
 		period: "2006 - actualidad"
-		company: "Portafolionline.com"
+		company: "Portafolionline.es"
 		position: "Fundador y principal desarrollador"
 		description: "Portafolionline es un gestor de contenidos especializado en webs de fotógrafos y artistas. Permite a los artistas crear
 		su propio website y mostrar su trabajo sin esfuerzo."
